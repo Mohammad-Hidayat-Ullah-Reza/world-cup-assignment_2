@@ -11,13 +11,16 @@
 /* element styles */
 body {
   font-family: "Poppins", "sans-serif";
+  background: #f0eded;
+}
+main {
 }
 
 /* -------------------------
     greatest section styles
 -------------------------- */
 .container--greatest {
-  background: #161616;
+  background: #000000;
   border-radius: 30px;
   margin: 2.75em 1.25em 1.5em 1.25em;
   display: flex;
@@ -37,35 +40,35 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 2.1rem;
-  color: #ffffff;
+  color: #c8d2da;
   margin: 0;
 }
 .greatest__para {
   font-weight: 400;
   font-size: 0.88rem;
   line-height: 1.5rem;
-  color: #ffffff;
+  color: #c8d2da;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
 }
 .greatest__live-link {
   text-decoration: none;
-  background: #dd0000;
+  background: #2600fc;
   border-radius: 5px;
   padding: 0.5em 0.75em;
   font-family: "HelveticaNeue", "roboto";
   font-size: 1.25rem;
-  color: #ffffff;
+  color: #c8d2da;
 }
 @keyframes button {
   0% {
-    background: #dd0000;
+    background: #2600fc;
   }
   50% {
-    background: #ffb700;
+    background: #dd0000;
   }
   100% {
-    background: #dd0000;
+    background: #2600fc;
   }
 }
 .greatest__live-link:hover {
@@ -120,16 +123,18 @@ blog section styles
 }
 .blog__link-match {
   padding: 0.56em 1.13em;
+  background: #2600fc;
+  color: #ffffff;
 }
 .blog__link-group {
   padding: 0.56em 2.1em;
+  background: white;
 }
 .blog__link-blog {
   font-size: 1.1rem;
   padding: 0.56em 3.75em;
   margin-bottom: 0.5em;
-  background: #dd0000;
-  color: #ffffff;
+  background: white;
 }
 
 /* ------ blog match card styles ------ */
@@ -138,7 +143,8 @@ blog section styles
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e8e8e8;
+  border: 1px solid rgb(192, 182, 182);
+  background: rgb(249, 246, 246);
   border-radius: 10px;
   padding: 40px 20px;
 }
@@ -186,7 +192,7 @@ blog section styles
    footer styles
 ----------------- */
 .footer {
-  background: #161616;
+  background: #0a014a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +201,7 @@ blog section styles
 .footer--heading {
   font-weight: 600;
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #f4ebeb;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -213,7 +219,7 @@ blog section styles
 .footer__item {
   font-size: 0.88rem;
   font-weight: 500;
-  color: #b9b9b9;
+  color: #dfdada;
 }
 .footer__item + .footer__item {
   margin-top: 1.25em;
@@ -302,7 +308,7 @@ blog section styles
   }
   .button__view-all {
     text-decoration: none;
-    background: #dd0000;
+    background: #1c0359;
     border-radius: 5px;
     padding: 12px 29px;
     text-align: center;
@@ -395,7 +401,7 @@ blog section styles
   }
   .blog--links {
     flex-direction: column;
-    background: #161616;
+    background: #0a014a;
     padding: 30px;
     height: fit-content;
     border-radius: 10px;
@@ -409,7 +415,6 @@ blog section styles
     margin: 30px 0 0 0;
   }
   .blog__link-match {
-    background: #ffffff;
     padding: 17px 0;
   }
   .blog__link-group {
@@ -418,6 +423,7 @@ blog section styles
   }
   .blog__link-blog {
     padding: 17px 0;
+    background: #ffffff;
   }
 
   /* ------ tablet view button ------ */
