@@ -132,51 +132,51 @@ blog section styles
   color: #ffffff;
 }
 
-/* ------ blog card styles ------ */
-.blog--card {
-  border: 1px solid rgb(234, 225, 225);
+/* ------ blog match card styles ------ */
+.blog--card-m {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e8e8e8;
   border-radius: 10px;
+  padding: 40px 20px;
 }
-.blog__card-img {
-  width: 100%;
-}
-.blog__card-info {
-  margin: 1.25em;
-}
-.blog__card-transfer {
-  padding: 4px 16px;
-  border: 1px solid #161616;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-.blog__card-heading {
-  font-size: 1.13rem;
-  font-weight: 600;
-  line-height: 1.67rem;
-  color: #161616;
-}
-.blog__card-duration-div {
+.blog__top-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.blog__card-duration {
-  margin-right: 1.88em;
+.blog__flag-container {
+  min-width: 40px;
+  width: 40%;
 }
-.blog__card-duration,
-.blog__card-comment {
-  color: rgba(22, 22, 22, 0.7);
+.blog__flag {
+  width: 100%;
+}
+.blog__para-vs {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #161616;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.blog__heading {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #161616;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.blog__date {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 0;
 }
-.chat-icon {
-  width: 16px;
-  height: 16px;
-}
-.fa-clock,
-.chat-icon {
-  margin-right: 0.63em;
-}
-
 /* ------ tablet view button ------ */
 .container--button {
   display: none;
@@ -292,22 +292,7 @@ blog section styles
     padding-bottom: 12px;
     font-size: 1.25rem;
   }
-  .blog__card-transfer {
-    font-size: 1.13rem;
-  }
-  .blog__card-heading {
-    font-size: 1.25rem;
-    line-height: 1.88rem;
-  }
-  #card-eight {
-    display: none;
-  }
-  #card-nine {
-    display: none;
-  }
-  #card-ten {
-    display: none;
-  }
+
   /* ------ tablet view button ------ */
   .container--button {
     display: flex;
@@ -354,7 +339,7 @@ blog section styles
 @media screen and (min-width: 1200px) {
   /* ------ greatest section styles ------ */
   .container--greatest {
-    margin: 3.13em 8.75em 8.13em 8.75em;
+    margin: 3.13em 5em 8.13em 5em;
   }
   .container--greatest-detail {
     width: 40%;
@@ -380,13 +365,33 @@ blog section styles
 
   /* ------ blog section styles ------ */
   .container--blog {
-    margin: 0 140px 130px 140px;
+    margin: 0 80px 130px 80px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "one two three four"
-      ". five six seven"
-      ". eight nine ten";
+      ". five six seven";
     gap: 24px;
+  }
+  #card-one {
+    grid-area: one;
+  }
+  #article-one {
+    grid-area: two;
+  }
+  #article-two {
+    grid-area: three;
+  }
+  #article-three {
+    grid-area: four;
+  }
+  #article-four {
+    grid-area: five;
+  }
+  #article-five {
+    grid-area: six;
+  }
+  #article-six {
+    grid-area: seven;
   }
   .blog--links {
     flex-direction: column;
@@ -413,39 +418,6 @@ blog section styles
   }
   .blog__link-blog {
     padding: 17px 0;
-  }
-  #card-one {
-    grid-area: one;
-  }
-  #card-two {
-    grid-area: two;
-  }
-  #card-three {
-    grid-area: three;
-  }
-  #card-four {
-    grid-area: four;
-  }
-  #card-five {
-    grid-area: five;
-  }
-  #card-six {
-    grid-area: six;
-  }
-  #card-seven {
-    grid-area: seven;
-  }
-  #card-eight {
-    display: block;
-    grid-area: eight;
-  }
-  #card-nine {
-    display: block;
-    grid-area: nine;
-  }
-  #card-ten {
-    display: block;
-    grid-area: ten;
   }
 
   /* ------ tablet view button ------ */

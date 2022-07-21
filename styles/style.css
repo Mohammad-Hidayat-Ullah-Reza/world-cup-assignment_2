@@ -354,7 +354,7 @@ blog section styles
 @media screen and (min-width: 1200px) {
   /* ------ greatest section styles ------ */
   .container--greatest {
-    margin: 3.13em 8.75em 8.13em 8.75em;
+    margin: 3.13em 5em 8.13em 5em;
   }
   .container--greatest-detail {
     width: 40%;
@@ -380,7 +380,7 @@ blog section styles
 
   /* ------ blog section styles ------ */
   .container--blog {
-    margin: 0 140px 130px 140px;
+    margin: 0 80px 130px 80px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "one two three four"
